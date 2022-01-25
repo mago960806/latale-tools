@@ -1,0 +1,5 @@
+ID,_Difficulty_Type,_Step,_Challenge1,_Probability1,_Challenge2,_Probability2,_Challenge3,_Probability3,_Challenge4,_Probability4,_Challenge5,_Probability5,_Challenge6,_Probability6,_Challenge7,_Probability7,_Challenge8,_Probability8,_Challenge9,_Probability9,_Challenge10,_Probability10,_Challenge11,_Probability11,_Challenge12,_Probability12,_Challenge13,_Probability13,_Challenge14,_Probability14,_Challenge15,_Probability15,_Challenge16,_Probability16,_Challenge17,_Probability17,_Challenge18,_Probability18,_Challenge19,_Probability19,_Challenge20,_Probability20
+1,1,1,10005,50,10008,50,10009,50,10011,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,1,2,10004,50,10007,50,10003,50,10010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,1,3,10002,50,10006,50,10001,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,1,4,10013,50,10015,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

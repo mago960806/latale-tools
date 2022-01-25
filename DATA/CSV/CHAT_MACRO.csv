@@ -1,0 +1,10 @@
+ID,_Type,_SubType,_Count,_IconFile,_IconIndex,_RequireItem,_FactorType
+1,1,1,10,10003050,60,0,%d_Normal
+2,2,2,1,10003050,61,170200207,%d_Special_Channel
+3,2,3,1,10003050,62,170200103,%d_Special_Server
+4,2,3,1,10003050,100,170200301,%d_Special_Server_smileface
+5,2,3,1,10003050,101,170200302,%d_Special_Server_cryface
+6,2,3,1,10003050,102,170200303,%d_Special_Server_loveface
+7,2,3,1,10003050,103,170200304,%d_Special_Server_skull
+8,2,3,1,10003050,104,170200305,%d_Special_Server_clover
+9,2,3,1,10003050,105,170200102,%d_Special_Server_love

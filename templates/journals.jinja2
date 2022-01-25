@@ -1,0 +1,10 @@
+{|
+|+ 改版记录表
+! 版本名称
+! 详情链接
+{% for journal in journals %}
+|-
+| {{ journal.title }}
+| {{ journal.page_url }}
+{% endfor %}
+|}

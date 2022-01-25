@@ -1,0 +1,20 @@
+anyio @ file:///Users/devops/Library/Caches/pypoetry/artifacts/1d/0d/97/b5c11bf32b58674e031c9d86e9c6801098d4d4b7847870e4215addc496/anyio-3.4.0-py3-none-any.whl
+certifi @ file:///Users/devops/Library/Caches/pypoetry/artifacts/89/06/5b/e4bfdf1b8370bdc0a26198e81afa98f68c01a8b1b515c9108c6ad98d8a/certifi-2021.10.8-py2.py3-none-any.whl
+charset-normalizer @ file:///Users/devops/Library/Caches/pypoetry/artifacts/f1/95/88/1b32fa37ab1e50b0567bb1318fd21acc782cdedc6ce1a76cf2558425f1/charset_normalizer-2.0.8-py3-none-any.whl
+cssselect @ file:///Users/devops/Library/Caches/pypoetry/artifacts/82/e3/fd/c0e9d5bef6641cbaf4e06b6fc1ee02955da30b9026250297fe8fdcf9e6/cssselect-1.1.0-py2.py3-none-any.whl
+h11 @ file:///Users/devops/Library/Caches/pypoetry/artifacts/9a/ce/16/adb43d44234e45608e12ef4254873fa6a1749ab0d28c5933fb1acbc4a3/h11-0.12.0-py3-none-any.whl
+httpcore @ file:///Users/devops/Library/Caches/pypoetry/artifacts/f7/03/c4/2f9fb6d02e0a6de7c7623218ac59329867292a7e08946eaee504745a4e/httpcore-0.14.3-py3-none-any.whl
+httpx==0.21.1
+idna @ file:///Users/devops/Library/Caches/pypoetry/artifacts/90/36/8c/81eabf6ac88608721ab27f439c9a6b9a8e6a21cc58c59ebb1a42720199/idna-3.3-py3-none-any.whl
+Jinja2==3.0.3
+lxml @ file:///Users/devops/Library/Caches/pypoetry/artifacts/29/c7/44/8b8d524f01a0ebfcb13a9ab4663e4452d983f26e3230bd3c3b208babd1/lxml-4.6.4-cp310-cp310-macosx_10_14_x86_64.whl
+MarkupSafe==2.0.1
+numpy==1.21.4
+pandas==1.3.4
+parsel==1.6.0
+python-dateutil @ file:///Users/devops/Library/Caches/pypoetry/artifacts/39/9b/3b/576da7c854551d780528d75132c98882925e44de0aecf8a31a4bea379c/python_dateutil-2.8.2-py2.py3-none-any.whl
+pytz @ file:///Users/devops/Library/Caches/pypoetry/artifacts/a0/f8/66/b50e6d372fa21e4d6db4b2fe5c5e94aaf59b82d02a7b3215fbc4fae889/pytz-2021.3-py2.py3-none-any.whl
+rfc3986 @ file:///Users/devops/Library/Caches/pypoetry/artifacts/11/74/da/f15a8d7ababda7a021d73f0f9ca94181607fe7c7366942c2c58cf30e65/rfc3986-1.5.0-py2.py3-none-any.whl
+six @ file:///Users/devops/Library/Caches/pypoetry/artifacts/89/b2/f8/fd92b6d5daa0f8889429b2fc67ec21eedc5cae5d531ee2853828ced6c7/six-1.16.0-py2.py3-none-any.whl
+sniffio @ file:///Users/devops/Library/Caches/pypoetry/artifacts/2b/1b/93/9c34d727e29f7bb11ce5b2ca7f43e77cb4e96a81ee5e07a92763951416/sniffio-1.2.0-py3-none-any.whl
+w3lib @ file:///Users/devops/Library/Caches/pypoetry/artifacts/c4/0a/65/5bdfc3dc72569dfb26bfb74bba669b100016cdc153a484bd107b71a5fc/w3lib-1.22.0-py2.py3-none-any.whl
