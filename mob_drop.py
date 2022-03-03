@@ -112,7 +112,7 @@ def load_mob() -> list[Mob]:
     return mobs
 
 
-def load_mob_loot():
+def load_mob_loot() -> pd.DataFrame:
     df: pd.DataFrame = pd.read_csv(CSV_PATH / "MOBLOOT.csv")
     return df
 

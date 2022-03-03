@@ -35,20 +35,25 @@ def load():
     load_mob_loots()
 
 
-def load_items():
+def load_items() -> pd.DataFrame:
     item_df = pd.concat([pd.read_csv(item_file, low_memory=False) for item_file in CSV_PATH.glob("ITEM_?.csv")])
     print(f"道具数据加载成功, 共 {len(item_df)} 条数据")
     return item_df
 
-def load_mobs():
+
+def load_mobs() -> pd.DataFrame:
     mobs_df = pd.read_csv(CSV_PATH / "GLOBAL_MOB.csv")
     print(f"怪物数据加载成功, 共 {len(mobs_df)} 条数据")
     return mobs_df
 
-def load_mob_loots():
+
+def load_mob_loots() -> pd.DataFrame:
     mob_loots = pd.read_csv(CSV_PATH / "MOBLOOT.csv")
     print(f"包裹数据加载成功, 共 {len(mob_loots)} 条数据")
     return mob_loots
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     init()
+    # items = load_items()
+    # items.to_csv("items.csv")
