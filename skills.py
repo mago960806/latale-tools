@@ -36,40 +36,33 @@ def load_skill_content() -> pd.DataFrame:
 
 
 def load_skill_main_menu() -> pd.DataFrame:
-    field_names = [
-        "ID",
-        "_Class",
-        "_SubID",
-    ]
+    field_names = [["_Class", "_SubID1", "_SubID2", "_SubID3", "_SubID4", "_SubID5", "_SubID6", "_SubID7", "_SubID8"]]
     df: pd.DataFrame = pd.read_csv(CSV_PATH / "SKILL_MAIN_MENU.csv")
     df = df.loc[df["ID"] != 0]
-    df["_SubID"] = df[
-        [
-            "_SubID1",
-            "_SubID2",
-            "_SubID3",
-            "_SubID4",
-            "_SubID5",
-            "_SubID6",
-            "_SubID7",
-            "_SubID8",
-        ]
-    ].values.tolist()
+    df = df[field_names]
+    
+    data = {}
+    for _, row in df.iterrows():
+        row = iter(row)
+        class_id = next(row)
+        sub_ids = [sub_id for sub_id in row]
+        if class_id in data:
+            data[class_id] = data[class_id].extend(sub_ids)
+        else:
+            data[class_id] = sub_ids
+        
+
     # 保留非 0 的值
-    df["_SubID"] = df["_SubID"].apply(
-        lambda items: [item for item in items if item != 0]
-    )
+    df["_SubID"] = df["_SubID"].apply(lambda items: [item for item in items if item != 0])
     # 去除非戰鬥技能
     df = df[~df["_SubID"].isin([[450, 451, 460], [101], [501, 502], [470]])]
     # 去除格鬥技能
-    df["_SubID"] = df["_SubID"].apply(
-        lambda items: [item for item in items if item != 510]
-    )
+    df["_SubID"] = df["_SubID"].apply(lambda items: [item for item in items if item != 510])
     df = df[field_names]
     return df
 
 
-def load_skill_sub_menu() -> pd.DataFrame:
+def load_skill_sub_menu() -> dict:
     field_names = [
         "ID",
         "_Type",
@@ -78,7 +71,8 @@ def load_skill_sub_menu() -> pd.DataFrame:
     df: pd.DataFrame = pd.read_csv(CSV_PATH / "SKILL_SUB_MENU.csv")
     df = df.loc[(df["ID"] != 0) & df["_Type"] == 1]
     df = df[field_names]
-    return df
+    for _, row in df.iterrows():
+        sub_id = 
 
 
 def load_classes() -> pd.DataFrame:
@@ -145,13 +139,12 @@ def get_skills_by_sub_id(sub_id: int) -> list[dict]:
             "_UpRequire2_Value2",
         ]
     ]
-    return skill_content[skill_content["_SubID"] == sub_id][field_names].to_dict(
-        orient="records"
-    )
+    return skill_content[skill_content["_SubID"] == sub_id][field_names].to_dict(orient="records")
 
 
 @lru_cache
 def get_sub_name_by_sub_id(sub_id) -> str:
+    print(sub_id)
     return skill_sub_menu[skill_sub_menu["ID"] == sub_id].values[0][2]
 
 
@@ -162,9 +155,7 @@ if __name__ == "__main__":
     skill_sub_menu = load_skill_sub_menu()
 
     skill_content = (
-        pd.merge(
-            skill_content, skill, suffixes=("_x", ""), left_on="_SkillID", right_on="ID"
-        )
+        pd.merge(skill_content, skill, suffixes=("_x", ""), left_on="_SkillID", right_on="ID")
         .sort_values("ID_x")
         .drop(columns=["ID_x", "_SkillID"])
     )

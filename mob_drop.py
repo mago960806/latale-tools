@@ -77,9 +77,9 @@ def load_mob() -> list[Mob]:
     df = df[field_names]
     df = df.loc[df["ID"] != 0]
     mob_loot_df = load_mob_loot()
-    item_df = load_item()
-    itemsets = load_itemset(item_df)
 
+    item_df = load_item()
+    itemsets = load_full_itemset()
     mobs = []
     for _, row in df.iterrows():
         mob_id, name = row
@@ -97,18 +97,15 @@ def load_mob() -> list[Mob]:
                     continue
                 item = get_item_by_id(item_id=item_id, item_df=item_df)
                 if not item:
-                    itemset = get_itemset_by_id(itemset_id=item_id, itemsets=itemsets)
-                    if not itemset:
-                        continue
-                        # raise ValueError(f"怪物掉落了未知物品: {item_id}")
-                    else:
+                    itemset = itemsets.get(item_id)
+                    if itemset is None:
+                        raise ValueError(f"怪物掉落了未知物品: {item_id}")
+                    if itemset:
                         loots.append(Loot(itemset=itemset, drop_rate=drop_rate))
                 else:
                     loots.append(Loot(item=item, drop_rate=drop_rate))
             mob = Mob(id=mob_id, name=name, xp=xp, ely_min=ely_min, ely_max=ely_max, ely_avg=ely_avg, loots=loots)
             mobs.append(mob)
-        # else:
-        #     print(f"该怪物无信息: {mob_id}")
     return mobs
 
 
@@ -121,18 +118,8 @@ def load_item() -> pd.DataFrame:
     field_names = [
         "ID",
         "_Name",
-        "_RGB",
     ]
     df = pd.concat([pd.read_csv(item_file, low_memory=False) for item_file in CSV_PATH.glob("ITEM_?.csv")])
-    # RGB
-    df["_RGB"] = df[
-        [
-            "_Red",
-            "_Green",
-            "_Blue",
-        ]
-    ].values.tolist()
-    df["_RGB"] = df["_RGB"].apply(lambda x: ",".join(map(str, x)))
     df = df[field_names]
     return df
 
@@ -149,18 +136,35 @@ def get_mob_loot_by_id(mob_id: int, mob_loot_df: pd.DataFrame) -> Optional[str]:
         return row.iloc[0]
 
 
-def get_itemset_by_id(itemset_id: int, itemsets: list[ItemSet]) -> Optional[ItemSet]:
-    for itemset in itemsets:
-        if itemset.id == itemset_id:
-            return itemset
-
-
-def load_itemset(item_df: pd.DataFrame) -> list[ItemSet]:
-    df: pd.DataFrame = pd.read_csv(CSV_PATH / "ITEMSET.csv")
-    itemsets = []
+def load_itemset_a() -> dict:
+    itemsets = {}
+    df: pd.DataFrame = pd.read_csv(CSV_PATH / "ITEMSET_A.csv")
     for _, row in df.iterrows():
         row = iter(row)
-        id = next(row)
+        itemset_id = next(row)
+        items = [v for v in row if v != 0]
+        itemsets[itemset_id] = items
+    return itemsets
+
+
+def load_itemset_b() -> dict:
+    itemsets = {}
+    df: pd.DataFrame = pd.read_csv(CSV_PATH / "ITEMSET_B.csv")
+    for _, row in df.iterrows():
+        row = iter(row)
+        itemset_id = next(row)
+        items = [v for v in row if v != 0]
+        itemsets[itemset_id] = items
+    return itemsets
+
+
+def load_itemset() -> dict:
+    item_df = load_item()
+    itemsets = {}
+    df: pd.DataFrame = pd.read_csv(CSV_PATH / "ITEMSET.csv")
+    for _, row in df.iterrows():
+        row = iter(row)
+        itemset_id = next(row)
         items = []
         for item_id, drop_rate in [*zip(row, row)]:
             # 过滤空数据
@@ -172,18 +176,34 @@ def load_itemset(item_df: pd.DataFrame) -> list[ItemSet]:
             else:
                 raise ValueError(f"存在未知道具ID: {item_id}")
         if items:
-            itemsets.append(ItemSet(id=id, items=items))
+            itemsets[itemset_id] = items
+    return itemsets
+
+
+def load_full_itemset() -> dict[int, list[ItemDrop]]:
+    itemsets_a = load_itemset_a()
+    itemsets_b = load_itemset_b()
+    itemsets = load_itemset()
+
+    for itemset_a_id, itemset_b_ids in itemsets_a.items():
+        itemset_items = []
+        for itemset_b_id in itemset_b_ids:
+            itemset_ids = itemsets_b.get(itemset_b_id)
+            if itemset_ids:
+                for itemset_id in itemset_ids:
+                    items = itemsets.get(itemset_id)
+                    if items:
+                        itemset_items.extend(itemsets.get(itemset_id))
+        itemsets[itemset_a_id] = itemset_items
+    itemsets = dict(sorted(itemsets.items()))
     return itemsets
 
 
 if __name__ == "__main__":
-    item = load_item()
     mobs = load_mob()
-    itemsets = load_itemset(item)
+    itemsets = load_full_itemset()
+
     with open("item_sets.json", "w", encoding="utf-8") as f:
         json.dump(itemsets, f, cls=DataClassJSONEncoder, ensure_ascii=False)
     with open("mobs.json", "w", encoding="utf-8") as f:
         json.dump(mobs, f, cls=DataClassJSONEncoder, ensure_ascii=False)
-
-    # mob_loot_with_name = pd.merge(mob_loot, mob, left_on="ID", right_on="ID")
-    # print(mob_loot_with_name.to_csv("mob_loot.csv"))
