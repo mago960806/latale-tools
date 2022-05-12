@@ -291,5 +291,7 @@ $RECYCLE.BIN/
 
 # Project
 *.SPF
+.vscode
+KR
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm+all,windows,macos,python

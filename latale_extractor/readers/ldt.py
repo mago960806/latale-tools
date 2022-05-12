@@ -4,7 +4,7 @@ from enum import IntEnum, unique
 from typing import BinaryIO, Optional
 
 
-from latale_extractor.utils import read_float, read_int32, read_short, read_string
+from latale_extractor.utils import read_int32, read_short, read_string, read_float32
 
 COLUMN_COUNT_POSITION = 4  # 列数位于文件 4 字节处
 ROW_COUNT_POSITION = 8  # 行数位于文件 8 字节处
@@ -93,7 +93,7 @@ class LdtReader(object):
                 ):
                     row.append(read_int32(self._stream))
                 elif column.type == ColumnType.FLOAT:
-                    row.append(read_float(self._stream))
+                    row.append(read_float32(self._stream))
                 elif column.type == ColumnType.STRING:
                     length = read_short(self._stream)
                     string = read_string(self._stream, length, encoding=self._encoding)

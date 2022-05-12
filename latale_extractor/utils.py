@@ -18,7 +18,7 @@ def read_int64(stream: BinaryIO) -> int:
     return _read_as_unpack(stream, "q", 8)
 
 
-def read_float(stream: BinaryIO) -> float:
+def read_float32(stream: BinaryIO) -> float:
     return _read_as_unpack(stream, "f", 4)
 
 
@@ -32,22 +32,23 @@ def _read_as_unpack(stream: BinaryIO, fmt, length: int) -> Any:
 
 
 def write_byte(stream: BinaryIO, value: bytes):
-    _write_as_pack(stream, 'b', bytes(value))
+    _write_as_pack(stream, "b", bytes(value))
 
 
 def write_short(stream: BinaryIO, value: int):
-    _write_as_pack(stream, 'h', int(value))
+    _write_as_pack(stream, "h", int(value))
 
 
 def write_int32(stream: BinaryIO, value: int):
-    _write_as_pack(stream, 'l', int(value))
+    _write_as_pack(stream, "l", int(value))
+
 
 def write_int64(stream: BinaryIO, value: int):
-    _write_as_pack(stream, 'q', int(value))
+    _write_as_pack(stream, "q", int(value))
 
 
 def write_float(stream: BinaryIO, value: float):
-    _write_as_pack(stream, 'f', float(value))
+    _write_as_pack(stream, "f", float(value))
 
 
 def write_string(stream: BinaryIO, value: str, encoding: str):
@@ -60,11 +61,13 @@ def write_pascal_string(stream: BinaryIO, value: str, encoding: str):
     stream.write(value_bytes)
 
 
-def write_string_with_pading(stream: BinaryIO, value: str, length: int, encoding: str, padding_char=b'\x00', append_bytes=b""):
+def write_string_with_pading(
+    stream: BinaryIO, value: str, length: int, encoding: str, padding_char=b"\x00", append_bytes=b""
+):
     value_bytes = value.encode(encoding) + append_bytes
     padding_bytes = padding_char * (length - len(value_bytes))
     stream.write(value_bytes + padding_bytes)
 
 
 def _write_as_pack(stream: BinaryIO, fmt, value):
-    stream.write(struct.pack('<' + fmt, value))
+    stream.write(struct.pack("<" + fmt, value))
