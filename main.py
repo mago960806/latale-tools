@@ -6,10 +6,10 @@ from rich.progress import track
 
 from latale_extractor import SpfFile, LdtReader
 
-ROWID_FILE = "ROWID_KR.SPF"
+ROWID_FILE = "ROWID.SPF"
 
 # TEMP_DIR = Path(tempfile.TemporaryDirectory().name)
-TEMP_DIR = Path("KR")
+TEMP_DIR = Path()
 
 LDT_PATH = Path(TEMP_DIR) / "DATA/LDT"
 CSV_PATH = Path(TEMP_DIR) / "DATA/CSV"
@@ -22,7 +22,7 @@ def init():
         spf_file.extractall(to=TEMP_DIR)
         ldt_files = list(LDT_PATH.glob("*.LDT"))
         for ldt_file in track(ldt_files, description="数据初始化中..."):
-            reader = LdtReader(ldt_file, encoding="EUC-KR")
+            reader = LdtReader(ldt_file, encoding="BIG5")
             with open(CSV_PATH / f"{ldt_file.stem}.csv", "w", encoding="utf-8", newline="") as csv_file:
                 writer = csv.writer(csv_file)
                 writer.writerow(reader.column_names)
@@ -54,6 +54,6 @@ def load_mob_loots() -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    init()
-    # items = load_items()
-    # items.to_csv("items.csv")
+    # init()
+    items = load_items()
+    items.to_csv("items.csv")
