@@ -54,6 +54,6 @@ def load_mob_loots() -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    # init()
+    init()
     items = load_items()
     items.to_csv("items.csv")
