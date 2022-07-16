@@ -40,9 +40,10 @@ class Gamble:
     items: list[Item]
     effects: Optional[list[Effect]] = None
 
+
 @dataclass
 class GambleReward:
-
+    pass
 
 
 def load_gamble():

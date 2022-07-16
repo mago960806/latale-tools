@@ -43,3 +43,5 @@ ID,_Name,_PassiveSkill_Type,_PositionIndex,_Guidebook_ID
 42,移動速度 A,45,45,144
 43,移動速度 B,46,46,145
 44,最終最大傷害 A,47,47,150
+45,最終最小傷害 A,48,48,151
+46,最終爆擊傷害 A,49,49,152
