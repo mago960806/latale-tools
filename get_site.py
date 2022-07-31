@@ -22,7 +22,7 @@ def print_notice_title(notice_id: int) -> None:
 
 
 def main():
-    notice_id = 50192
+    notice_id = 50431
     with ThreadPoolExecutor(max_workers=10) as pool:
         tasks = pool.map(print_notice_title, [notice_id + i for i in range(500)])
 
