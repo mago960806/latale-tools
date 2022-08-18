@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import pandas as pd
-import csv
 
 
 TEMP_DIR = Path()
@@ -26,24 +25,22 @@ LDT_NAME = "ITEM_UPGRADE"
 EXPORT_FIELD_NAMES = [
     "ID",
     "_Main_Item",
+    "_Result",
+    "_Result_massage",
     "_Material",
-    # "_Probability_Min",
     "_Probability_Max",
     "_Probability_Modifier",
     "_charge",
-    "_Result",
-    "_Result_massage",
 ]
 EXPORT_FIELD_NAMES_IN_CHINIESE = [
     "ID",
-    "裝備名稱",
+    "强化前",
+    "强化后",
+    "强化描述",
     "强化材料",
-    # "最小成功率",
-    "成功率",
+    "成功率(%)",
     "是否吃镶嵌加成",
     "手續費",
-    "强化后裝備名稱",
-    "提示信息",
 ]
 
 ITEM_DB = load_item()
