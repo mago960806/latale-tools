@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 
-TEMP_DIR = Path("KR")
+TEMP_DIR = Path()
 CSV_PATH = Path(TEMP_DIR) / "DATA/CSV"
 
 LDT_NAME = "MOBBASE"

@@ -87,7 +87,8 @@ def load_quest_info() -> pd.DataFrame:
         "_NPC_Info1",
         "_Quest_Kind",
     ]
-    df = df.loc[(df["ID"] != 0) & (df["_Quest_Kind"] == "副本")]
+    df = df.loc[df["ID"] != 0]
+    # df = df.loc[(df["ID"] != 0) & (df["_Quest_Kind"] == "副本")]
     df = df[field_names]
     return df
 
@@ -104,7 +105,10 @@ def export():
         for _, row in quest_info.iterrows():
             quest_id = row["ID"]
             quest_name = quest.get(quest_id)
-            reward_exp, reward_ely, reward_items = quest_reward.get(quest_id).values()
+            try:
+                reward_exp, reward_ely, reward_items = quest_reward.get(quest_id).values()
+            except AttributeError:
+                continue
             writer.writerow(
                 [
                     quest_id,
