@@ -1,22 +1,10 @@
-ID,_Use,_PositionIndex,_Title,_Image,_Index,_Descript,_StartYear,_StartMonth,_StartDay,_StartHour,_StartMinute,_EndYear,_EndMonth,_EndDay,_EndHour,_EndMinute,_Url,_EventType,_EventID
-1,1,1,彩虹島點點名改版前夜祭,EventBanner05.png,5,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,10,1,0,0,2022,10,13,10,0,http://la.mangot5.com/la/index,2,22092201
-2,1,2,裔奧的困擾！,EventBanner05.png,1,明明還沒冬天，卻有人在冬天的極地迷宮放出了奇怪的雪人！協助裔奧處理這些小麻煩！,2022,9,29,10,0,2022,10,13,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51196,1,0
-3,1,3,副本次數２倍！,EventBanner05.png,3,活動期間內指定副本每日可參與次數提升１倍！打裝練等最佳時機！趕快呼朋引伴跟上！,2022,9,29,10,0,2022,10,13,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51197,1,0
-4,1,4,秋日將至點點名,EventBanner04.png,7,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,9,1,0,0,2022,9,30,23,59,http://la.mangot5.com/la/index,2,22080301
-5,0,5,夏末點點名,EventBanner01.png,1,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,8,1,0,0,2022,8,31,23,59,http://la.mangot5.com/la/index,2,22062401
-6,0,6,● 月亮蒐集家 ○,EventBanner03.png,1,完成09/01∼09/29的中秋系列活動來蒐集月亮！,2022,9,1,10,0,2022,9,29,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=50792,1,0
-7,0,7,↑↑究極提神飲料↑↑,EventBanner04.png,1,月兔耶比不小心從樹上摔下來了！牠需要一點厲害的提神飲料來恢復力量飛回樹頂！（雖然還有更厲害的方法,2022,9,15,10,0,2022,9,29,10,0,http://la.mangot5.com/game/la/event/detail/?contentNo=50960,1,0
-8,0,8,副本次數２倍！,EventBanner04.png,3,活動期間內指定副本每日可參與次數提升１倍！打裝練等最佳時機！趕快呼朋引伴跟上！,2022,9,15,10,0,2022,9,29,10,0,http://la.mangot5.com/game/la/event/detail/?contentNo=50961,1,0
-9,0,9,▂ ▅ █ 月來月高 █ ▅ ▂,EventBanner03.png,3,聽說在最靠近月亮的樹頂住著一隻月兔耶比！找到牠就能美夢成真！？,2022,9,1,10,0,2022,9,15,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=50793,1,0
-10,0,10,副本寶箱 1+1！,EventBanner03.png,5,活動期間內指定副本寶箱數量 1+1！讓島民們滿載而歸！,2022,9,1,10,0,2022,9,15,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=50791,1,0
-11,0,11,生日快樂點點名,EventBanner01.png,2,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,7,1,0,0,2022,7,31,23,59,http://la.mangot5.com/la/index,2,22060701
-12,0,12,初夏彩虹點點名,EventBanner01.png,2,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,6,1,0,0,2022,6,30,23,59,http://la.mangot5.com/la/index,2,22050201
-13,0,13,5月彩虹點點名,EventBanner01.png,2,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,5,1,0,0,2022,5,31,23,59,http://la.mangot5.com/la/index,2,22040101
-14,0,14,4月彩虹點點名,EventBanner01.png,2,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,4,1,0,0,2022,4,30,23,59,http://la.mangot5.com/la/index,2,22030401
-15,0,15,3月彩虹點點名,EventBanner01.png,7,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,3,1,0,0,2022,3,31,23,59,http://la.mangot5.com/la/index,2,22020801
-16,0,16,2月彩虹點點名,EventBanner01.png,7,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,2,1,0,0,2022,2,28,23,59,http://la.mangot5.com/la/index,2,22011301
-17,0,17,2022歡迎點點名,EventBanner01.png,7,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2022,1,6,0,0,2022,1,31,23,59,http://la.mangot5.com/la/index,2,22010401
-18,0,18,聖誕彩虹點點名,EventBanner01.png,7,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2021,12,1,0,0,2021,12,31,23,59,http://la.mangot5.com/la/index,2,21111901
-19,0,19,11月點點名,EventBanner01.png,3,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2021,11,1,0,0,2021,11,30,23,59,http://la.mangot5.com/la/index,2,21102201
-20,0,20,10月點點名,EventBanner01.png,3,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2021,10,1,0,0,2021,10,31,23,59,http://la.mangot5.com/la/index,2,21092301
-21,0,21,9月點點名,EventBanner01.png,1,活動期間內，上線滿30分鐘即可獲得日日不一樣的獎勵！,2021,9,3,0,0,2021,9,29,23,59,http://la.mangot5.com/la/index,2,21083001
+ID,_Use,_PositionIndex,_Title,_Image,_Index,_Descript,_StartYear,_StartMonth,_StartDay,_StartHour,_StartMinute,_EndYear,_EndMonth,_EndDay,_EndHour,_EndMinute,_Url,_NaverUrl,_EventType,_EventID,_EventConnectID,_Point_Type
+1,1,1,普紐瑪改版簽到,EventBanner002.png,1,活動期間內，只有上線即可獲得日日不一樣的獎勵！,2022,10,13,10,0,2022,11,1,4,29,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,2,22092601,22092602,0
+2,1,2,排名活動(測試),EventBanner002.png,2,排名活動(測試),2022,9,15,0,0,2022,10,12,23,59,http://la.mangot5.com/la/index,http://la.mangot5.com/la/index,3,22091505,0,0
+3,1,3,普紐瑪挑戰任務,EventBanner002.png,3,普紐瑪挑戰任務,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,4,22092603,0,1
+4,1,4,普紐瑪挑戰任務獎勵兌換,EventBanner002.png,4,普紐瑪挑戰任務獎勵兌換,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,5,22092604,0,1
+5,1,5,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092605,0,0
+6,1,6,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092606,0,0
+7,1,7,極限燃燒成長超越活動！,EventBanner003.png,2,極限燃燒成長超越活動！,2022,10,13,0,0,2022,12,8,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092607,0,0
+8,1,8,副本寶箱 1+1！,EventBanner003.png,3,副本寶箱 1+1！,2022,10,13,0,0,2022,10,27,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51322,https://la.mangot5.com/game/la/event/detail/?contentNo=51322,1,22092608,0,0
+9,1,9,更多活動→,EventBanner003.png,4,更多活動→,2022,10,13,0,0,2022,12,31,23,59,https://la.mangot5.com/game/la/journal2,https://la.mangot5.com/game/la/journal2,1,22092609,0,0

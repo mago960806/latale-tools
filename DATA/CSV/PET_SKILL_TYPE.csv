@@ -45,3 +45,4 @@ ID,_Name,_PassiveSkill_Type,_PositionIndex,_Guidebook_ID
 44,最終最大傷害 A,47,47,150
 45,最終最小傷害 A,48,48,151
 46,最終爆擊傷害 A,49,49,152
+47,能力值(%)/HP(%) B,50,50,153

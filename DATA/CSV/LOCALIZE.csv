@@ -9,7 +9,7 @@ ID,_Check,_Des
 8,0,http://www.mangot5.com/Index/Member/Register?selectedGame=la
 9,0,http://www.mangot5.com/Index/Billing/MyCard/Payment?selectedGame=la
 10,20,
-11,30,
+11,0,
 12,0,http://www.mangot5.com/Index/Member/FindID
 13,0,http://www.mangot5.com/Index/Member/FindPWD
 14,1,
@@ -71,7 +71,7 @@ ID,_Check,_Des
 70,0,
 71,0,
 72,0,
-73,0,
+73,1,
 74,0,
 75,0,
 76,0,
