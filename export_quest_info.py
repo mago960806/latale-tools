@@ -13,6 +13,7 @@ LDT_NAME = "QUEST_INFO"
 EXPORT_FIELD_NAMES_IN_CHINIESE = [
     "任務ID",
     "任務名稱",
+    "任務目標",
     "NPC位置",
     "NPC名稱",
     "EXP獎勵",
@@ -83,6 +84,7 @@ def load_quest_info() -> pd.DataFrame:
     df: pd.DataFrame = pd.read_csv(CSV_PATH / "QUEST_INFO_2.csv")
     field_names = [
         "ID",
+        "_Purpose",
         "_Place_Info1",
         "_NPC_Info1",
         "_Quest_Kind",
@@ -113,6 +115,7 @@ def export():
                 [
                     quest_id,
                     quest_name,
+                    row["_Purpose"],
                     row["_Place_Info1"],
                     row["_NPC_Info1"],
                     reward_exp,

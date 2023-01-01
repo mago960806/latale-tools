@@ -10,7 +10,7 @@ def print_notice_title(notice_id: int) -> None:
         url,
         params={"contentNo": notice_id},
         verify=False,
-        proxies={"http://": "http://127.0.0.1:7890", "https://": "http://127.0.0.1:7890"},
+        # proxies={"http://": "http://127.0.0.1:7890", "https://": "http://127.0.0.1:7890"},
     )
     notice_id += 1
     selector = Selector(response.text)
@@ -22,12 +22,16 @@ def print_notice_title(notice_id: int) -> None:
         # print(f"{response.request.url}: skiped")
 
 
-def main():
-    notice_id = 50714
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        tasks = pool.map(print_notice_title, [notice_id + i for i in range(500)])
+if __name__ == "__main__":
+    while True:
+        try:
+            notice_id = int(input("请输入起始contentNo: "))
+        except ValueError:
+            pass
+        else:
+            with ThreadPoolExecutor(max_workers=10) as pool:
+                tasks = pool.map(print_notice_title, [notice_id + i for i in range(300)])
 
-    list(tasks)
-
-
-main()
+            list(tasks)
+            break
+    input("按任意键退出程序...")
