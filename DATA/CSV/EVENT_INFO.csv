@@ -1,10 +1,27 @@
 ID,_Use,_PositionIndex,_Title,_Image,_Index,_Descript,_StartYear,_StartMonth,_StartDay,_StartHour,_StartMinute,_EndYear,_EndMonth,_EndDay,_EndHour,_EndMinute,_Url,_NaverUrl,_EventType,_EventID,_EventConnectID,_Point_Type
-1,1,1,普紐瑪改版簽到,EventBanner002.png,1,活動期間內，只有上線即可獲得日日不一樣的獎勵！,2022,10,13,10,0,2022,11,1,4,29,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,2,22092601,22092602,0
-2,1,2,排名活動(測試),EventBanner002.png,2,排名活動(測試),2022,9,15,0,0,2022,10,12,23,59,http://la.mangot5.com/la/index,http://la.mangot5.com/la/index,3,22091505,0,0
-3,1,3,普紐瑪挑戰任務,EventBanner002.png,3,普紐瑪挑戰任務,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,4,22092603,0,1
-4,1,4,普紐瑪挑戰任務獎勵兌換,EventBanner002.png,4,普紐瑪挑戰任務獎勵兌換,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,5,22092604,0,1
-5,1,5,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092605,0,0
-6,1,6,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092606,0,0
-7,1,7,極限燃燒成長超越活動！,EventBanner003.png,2,極限燃燒成長超越活動！,2022,10,13,0,0,2022,12,8,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,1,22092607,0,0
-8,1,8,副本寶箱 1+1！,EventBanner003.png,3,副本寶箱 1+1！,2022,10,13,0,0,2022,10,27,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51322,https://la.mangot5.com/game/la/event/detail/?contentNo=51322,1,22092608,0,0
-9,1,9,更多活動→,EventBanner003.png,4,更多活動→,2022,10,13,0,0,2022,12,31,23,59,https://la.mangot5.com/game/la/journal2,https://la.mangot5.com/game/la/journal2,1,22092609,0,0
+1,0,99,普紐瑪改版簽到,EventBanner002.png,1,活動期間內，只有上線即可獲得日日不一樣的獎勵！,2022,10,13,10,0,2022,10,31,23,59,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,2,22092601,22092602,0
+2,0,99,排名活動(測試),EventBanner002.png,2,排名活動(測試),2022,9,15,0,0,2022,10,12,23,59,http://la.mangot5.com/la/index,,3,22091505,0,0
+3,0,99,普紐瑪挑戰任務,EventBanner002.png,3,普紐瑪挑戰任務,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,4,22092603,0,1
+4,0,99,普紐瑪挑戰任務獎勵兌換,EventBanner002.png,4,普紐瑪挑戰任務獎勵兌換,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,5,22092604,0,1
+5,0,99,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,1,22092605,0,0
+6,0,99,○ 「時間」的挑戰 ○,EventBanner003.png,1,○ 「時間」的挑戰 ○,2022,10,13,0,0,2022,10,27,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,1,22092606,0,0
+7,0,99,極限燃燒成長超越活動！,EventBanner003.png,2,極限燃燒成長超越活動！,2022,10,13,0,0,2022,12,8,10,0,https://landing.mangot5.com/template/la/event/221013_oct_puneuma/index.html,,1,22092607,0,0
+8,0,99,副本寶箱 1+1！,EventBanner003.png,3,副本寶箱 1+1！,2022,10,27,10,0,2022,11,10,10,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51322,,1,22092608,0,0
+9,1,50,更多活動→,EventBanner003.png,4,更多活動→,2022,10,13,0,0,2022,12,31,23,59,https://la.mangot5.com/game/la/journal2,,1,22092609,0,0
+10,1,1,彩虹島物語11月點點名,EventBanner004.png,1,活動期間內，只有上線即可獲得日日不一樣的獎勵！,2022,11,1,10,0,2022,11,30,23,59,http://la.mangot5.com/la/index,,2,22102401,22102402,0
+11,0,99,普紐瑪挑戰後夜祭,EventBanner004.png,2,普紐瑪挑戰後夜祭,2022,10,27,10,0,2022,11,10,9,0,http://la.mangot5.com/la/index,,4,22102403,0,2
+12,0,99,普紐瑪挑戰後夜祭獎勵兌換,EventBanner004.png,3,普紐瑪挑戰後夜祭獎勵兌換,2022,10,27,10,0,2022,11,10,9,0,http://la.mangot5.com/la/index,,5,22102404,0,2
+13,0,99,寒冬綻放的希望之花,EventBanner004.png,4,寒冬綻放的希望之花,2022,10,27,10,0,2022,11,10,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51452,,1,22102405,0,0
+14,1,25,副本寶箱 1+1！,EventBanner003.png,3,副本寶箱 1+1！,2022,12,22,9,0,2023,1,5,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51971,,1,22102406,0,0
+15,1,3,11月挑戰任務,EventBanner005.png,1,11月挑戰任務,2022,11,10,9,0,2022,12,8,9,0,http://la.mangot5.com/la/index,,4,22110401,0,1
+16,1,4,11月挑戰任務獎勵兌換,EventBanner005.png,2,11月挑戰任務獎勵兌換,2022,11,10,9,0,2022,12,8,9,0,http://la.mangot5.com/la/index,,5,22110402,0,1
+17,0,99,雅莉安娜的新商品！,EventBanner005.png,3,雅莉安娜的新商品！,2022,11,10,9,0,2022,11,24,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51707,,1,22110403,0,0
+18,0,99,副本次數２倍！,EventBanner005.png,4,副本次數２倍！,2022,11,10,9,0,2022,11,24,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51708,,1,22110404,0,0
+19,1,2,彩虹島物語聖誕點點名,EventBanner007.png,1,彩虹島物語聖誕點點名,2022,12,1,9,0,2023,1,4,23,59,http://la.mangot5.com/la/index,,2,22111401,22111402,0
+20,0,99,飄起來吧！,EventBanner006.png,1,飄起來吧！,2022,11,24,9,0,2022,12,8,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51709,,1,22111403,0,0
+21,0,99,副本次數２倍！,EventBanner005.png,4,副本次數２倍！,2022,11,24,9,0,2022,12,8,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51710,,1,22111404,0,0
+22,1,5,12月挑戰任務,EventBanner008.png,1,12月挑戰任務,2022,12,8,9,0,2023,1,5,9,0,http://la.mangot5.com/la/index,,4,22120201,0,2
+23,1,6,12月挑戰任務獎勵兌換,EventBanner008.png,2,12月挑戰任務獎勵兌換,2022,12,8,9,0,2023,1,5,9,0,http://la.mangot5.com/la/index,,5,22120202,0,2
+24,1,7,愛麗絲的聖夜之歌,EventBanner008.png,3,愛麗絲的聖夜之歌,2022,12,8,9,0,2023,1,5,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51967,,1,22120203,0,0
+25,0,99,聖誕老公公的邀請,EventBanner008.png,4,聖誕老公公的邀請,2022,12,8,9,0,2022,12,22,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51968,,1,22120204,0,0
+26,1,8,歡樂聖誕PARTY,EventBanner009.png,1,歡樂聖誕PARTY,2022,12,22,9,0,2023,1,5,9,0,https://la.mangot5.com/game/la/event/detail/?contentNo=51970,,1,22121601,0,0
