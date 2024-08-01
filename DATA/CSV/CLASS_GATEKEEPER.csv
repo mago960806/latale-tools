@@ -1,0 +1,4 @@
+ID,_BaseGatePoint,_RecvTime,_RecvGatePoint,_X_Size,_Y_Size,_Gate_Skill1,_Gate_Skill2,_Gate_Skill3
+76,200,10,10,5,4,1001,0,0
+77,400,10,10,5,4,1002,1003,0
+78,600,10,10,5,4,1004,1005,1006

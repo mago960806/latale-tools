@@ -294,6 +294,10 @@ CollectMobCategoryDict = {
     14: "Lv 261 - 280",
     16: "突變怪物",
     17: "Boss怪物",
+    18: "ULv 1 ~ 1000",
+    19: "ULv 1001 ~ 2000",
+    20: "ULv 2001 ~ 3000",
+    21: "ULv 3001 ~ 4000",
 }
 
 EXPORT_FIELD_NAMES = [

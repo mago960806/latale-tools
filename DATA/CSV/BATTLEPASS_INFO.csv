@@ -1,4 +1,7 @@
-ID,_Use,_Title,_Season_Image,_Season_Index,_Reward_Image,_Reward_Index,_StartYear,_StartMonth,_StartDay,_StartHour,_StartMinute,_EndYear,_EndMonth,_EndDay,_EndHour,_EndMinute,_Cash_Shop_ID
-1,0,7錯 ぬ蝶,BattlePass_Season.png,1,BattlePass_Reward.png,1,2021,7,1,0,0,2021,7,30,23,59,900000
-2,0,8錯 ぬ蝶,BattlePass_Season.png,2,BattlePass_Reward.png,1,2021,8,1,0,0,2021,8,3,0,0,900000
-3,0,9錯 ぬ蝶,BattlePass_Season.png,1,BattlePass_Reward.png,1,2021,9,1,0,0,2021,11,29,23,59,900000
+ID,_Use,_Title,_Season_Image,_Season_Index,_Reward_Image,_Reward_Index,_StartYear,_StartMonth,_StartDay,_StartHour,_StartMinute,_EndYear,_EndMonth,_EndDay,_EndHour,_EndMinute
+1,3,彩虹島戰鬥通行證 第1季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2023,3,24,8,0,2023,6,8,3,59
+2,3,彩虹島戰鬥通行證 第2季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2023,6,26,8,0,2023,9,7,3,59
+3,3,彩虹島戰鬥通行證 第3季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2023,10,12,8,0,2023,12,7,3,59
+4,3,彩虹島戰鬥通行證 第4季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2024,1,5,8,0,2024,3,28,3,59
+5,3,彩虹島戰鬥通行證 第5季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2024,3,26,8,0,2024,6,13,3,59
+6,2,彩虹島戰鬥通行證 第6季,BattlePass_Season.png,1,BattlePass_Reward.png,1,2024,7,1,8,0,2024,9,19,3,59
