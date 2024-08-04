@@ -47,11 +47,11 @@ DATA_TYPE_MAP = {
 
 
 def read_int16(stream: BinaryIO) -> int:
-    return struct.unpack("<H", stream.read(2))[0]
+    return struct.unpack("<h", stream.read(2))[0]
 
 
 def read_int(stream: BinaryIO) -> int:
-    return struct.unpack("<I", stream.read(4))[0]
+    return struct.unpack("<i", stream.read(4))[0]
 
 
 def read_float(stream: BinaryIO) -> float:
@@ -124,7 +124,7 @@ for file in track(files, description="数据文件解析中..."):
                         field_value = read_int(stream)
                     case FieldType.STRING:
                         length = read_int16(stream)
-                        field_value = read_string(stream, length=length, encoding="Big5-HKSCS")
+                        field_value = read_string(stream, length=length, encoding="Big5-HKSCS").strip()
                     case FieldType.FLOAT:
                         field_value = read_float(stream)
                 field_values.append(field_value)
