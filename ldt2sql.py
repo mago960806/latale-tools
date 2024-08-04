@@ -4,19 +4,40 @@ from enum import unique, IntEnum
 from pathlib import Path
 from typing import BinaryIO
 from struct import calcsize
-
+import csv
 import pandas as pd
 from rich.progress import track
 from rich import print
 import sys
 import io
 import struct
+import chardet
 
 BASE_DIR = Path(__file__).resolve().parent
 LOG_FILE = BASE_DIR / "ldt2sql.log"
 ROWID_FILE = BASE_DIR / "ROWID.SPF"
 
 FILE_INFO_FORMAT = "128sIII"
+
+LDT_PATH = BASE_DIR / "DATA/LDT"
+CSV_PATH = BASE_DIR / "DATA/CSV"
+
+
+KR_LDT_FILE_LIST = [
+    "CASH_SHOP_BURNING.LDT",
+    "CHAT_COLOR.LDT",
+    "COLOURING.LDT",
+    "GUIDE_BOOK.LDT",
+    "GM_NOTICE_ICON.LDT",
+    "HELP_MENU.LDT",
+    "HELP_UIBTN.LDT",
+    "PET_TRANSITION.LDT",
+    "PVP_SKILL_TXT.LDT",
+    "QUEST.LDT",
+    "SHUTDOWN.LDT",
+    "SKILL_TREE_SETTING.LDT",
+    "SKILL_TXT.LDT",
+]
 
 
 @dataclass
@@ -38,7 +59,7 @@ class FieldType(IntEnum):
 DATA_TYPE_MAP = {
     FieldType.STRING: "string",
     FieldType.BOOL: "boolean",
-    FieldType.INT: "UInt32",
+    FieldType.INT: "Int32",
     FieldType.FLOAT: "Float32",
 }
 
@@ -55,12 +76,15 @@ def read_float(stream: BinaryIO) -> float:
     return struct.unpack("<f", stream.read(4))[0]
 
 
-def read_string(stream: BinaryIO, /, length: int, encoding: str = "ascii", failback_encoding: str = "CP949") -> str:
-    data = stream.read(length)
-    try:
-        return struct.unpack(f"{length}s", data)[0].rstrip(b"\x20").rstrip(b"\x00").decode(encoding)
-    except UnicodeDecodeError:
-        return struct.unpack(f"{length}s", data)[0].rstrip(b"\x20").rstrip(b"\x00").decode(failback_encoding)
+def read_string(stream: BinaryIO, /, length: int, encoding: str = "ascii") -> str:
+    return struct.unpack(f"{length}s", stream.read(length))[0].rstrip(b"\x20").rstrip(b"\x00").decode(encoding)
+    # data = stream.read(length)
+    # detected_encoding = chardet.detect(data)["encoding"]
+    # if detected_encoding == "EUC-KR" or detected_encoding == "CP949":
+    #     print(data)
+    #     return struct.unpack(f"{length}s", data)[0].rstrip(b"\x20").rstrip(b"\x00").decode(failback_encoding)
+    # else:
+    #
 
 
 if not ROWID_FILE.exists():
@@ -94,14 +118,18 @@ with ROWID_FILE.open("rb") as stream:
 # 读取 LDT 文件
 for file in track(files, description="数据文件解析中..."):
     rows = []
-    print(file.path.name)
     with file.path.open("rb") as stream:
+        if file.path.name in KR_LDT_FILE_LIST:
+            encoding = "CP949"
+        else:
+            encoding = "Big5-HKSCS"
         # 读取行列数量
         _, column_count, row_count = struct.unpack("III", stream.read(12))
         # 读取字段名称
         field_names = ["ID"]
         for _ in range(column_count):
-            field_name = read_string(stream, 64).lstrip("_")
+            field_name = read_string(stream, 64)
+            # field_name = read_string(stream, 64).lstrip("_")
             field_names.append(field_name)
         # 读取字段类型
         stream.seek(64 * (128 - column_count), io.SEEK_CUR)
@@ -121,12 +149,16 @@ for file in track(files, description="数据文件解析中..."):
                         field_value = read_int(stream)
                     case FieldType.STRING:
                         length = read_int16(stream)
-                        field_value = read_string(stream, length=length, encoding="Big5-HKSCS").strip()
+                        field_value = read_string(stream, length=length, encoding=encoding).strip()
                     case FieldType.FLOAT:
                         field_value = read_float(stream)
                 field_values.append(field_value)
             rows.append(field_values)
     # 转换为 DataFrame 对象
-    field_types = [DATA_TYPE_MAP[field_type] for field_type in field_types]
-    df = pd.DataFrame(rows, columns=field_names).astype(dict(zip(field_names, field_types)))
+    # field_types = [DATA_TYPE_MAP[field_type] for field_type in field_types]
+    # df = pd.DataFrame(rows, columns=field_names).astype(dict(zip(field_names, field_types)))
     # df.to_csv(f"{file.path.name}.csv", index=False)
+    with open(CSV_PATH / f"{file.path.stem}.csv", "w", encoding="utf-8", newline="") as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(field_names)
+        writer.writerows(rows)

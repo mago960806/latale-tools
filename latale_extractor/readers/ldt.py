@@ -3,7 +3,6 @@ from dataclasses import dataclass
 from enum import IntEnum, unique
 from typing import BinaryIO, Optional
 
-
 from latale_extractor.utils import read_int32, read_short, read_string, read_float32
 
 COLUMN_COUNT_POSITION = 4  # 列数位于文件 4 字节处
