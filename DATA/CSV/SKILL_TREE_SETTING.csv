@@ -1,19 +1,19 @@
 ID,_Description,_Image,_Left,_Top,_Right,_Bottom,_Image_PosX,_Image_PosY
-1,스킬트리 라인 이미지 화살표 ↑,Data/Interface/Concept/UI_Object_002.png,323,291,331,296,24,54
-2,스킬트리 라인 이미지 화살표 ↓,Data/Interface/Concept/UI_Object_002.png,332,296,340,301,24,0
-3,스킬트리 라인 이미지 화살표 →,Data/Interface/Concept/UI_Object_002.png,346,291,351,299,0,19
-4,스킬트리 라인 이미지 화살표 ←,Data/Interface/Concept/UI_Object_002.png,341,300,346,308,50,19
-5,"蝶鑒⑷葬 塭檣 檜嘐雖 ""|"" 嬴楚",Data/Interface/Concept/UI_Object_002.png,334,291,338,296,26,54
-6,"蝶鑒⑷葬 塭檣 檜嘐雖 ""|"" 嬪",Data/Interface/Concept/UI_Object_002.png,325,296,329,301,26,0
-7,"蝶鑒⑷葬 塭檣 檜嘐雖 ""-"" 謝",Data/Interface/Concept/UI_Object_002.png,346,302,351,306,0,21
-8,"蝶鑒⑷葬 塭檣 檜嘐雖 ""-"" 辦",Data/Interface/Concept/UI_Object_002.png,341,293,346,297,50,21
-9,"蝶鑒⑷葬 塭檣 檜嘐雖 ""+""",Data/Interface/Concept/UI_Object_002.png,352,266,407,325,0,0
-10,"蝶鑒⑷葬 塭檣 檜嘐雖 ""-----""",Data/Interface/Concept/UI_Object_002.png,352,287,407,291,0,21
-11,"蝶鑒⑷葬 塭檣 檜嘐雖 ""|"" 嬪睡攪 嬴楚部",Data/Interface/Concept/UI_Object_002.png,378,266,382,325,26,0
-12,"蝶鑒⑷葬 塭檣 檜嘐雖 ""戎""",Data/Interface/Concept/UI_Object_002.png,352,266,382,291,0,0
-13,"蝶鑒⑷葬 塭檣 檜嘐雖 ""戌""",Data/Interface/Concept/UI_Object_002.png,378,266,407,291,26,0
-14,"蝶鑒⑷葬 塭檣 檜嘐雖 ""忙""",Data/Interface/Concept/UI_Object_002.png,378,287,407,325,26,21
-15,"蝶鑒⑷葬 塭檣 檜嘐雖 ""忖""",Data/Interface/Concept/UI_Object_002.png,352,287,382,325,0,21
+1,蝶鑒お葬 塭檣 檜嘐雖 �香嚂� ∟,Data/Interface/Concept/UI_Object_002.png,323,291,331,296,24,54
+2,蝶鑒お葬 塭檣 檜嘐雖 �香嚂� ⊿,Data/Interface/Concept/UI_Object_002.png,332,296,340,301,24,0
+3,蝶鑒お葬 塭檣 檜嘐雖 �香嚂� ⊥,Data/Interface/Concept/UI_Object_002.png,346,291,351,299,0,19
+4,蝶鑒お葬 塭檣 檜嘐雖 �香嚂� ∠,Data/Interface/Concept/UI_Object_002.png,341,300,346,308,50,19
+5,"蝶鑒お葬 塭檣 檜嘐雖 ""|"" 嬴楚",Data/Interface/Concept/UI_Object_002.png,334,291,338,296,26,54
+6,"蝶鑒お葬 塭檣 檜嘐雖 ""|"" 嬪",Data/Interface/Concept/UI_Object_002.png,325,296,329,301,26,0
+7,"蝶鑒お葬 塭檣 檜嘐雖 ""-"" 謝",Data/Interface/Concept/UI_Object_002.png,346,302,351,306,0,21
+8,"蝶鑒お葬 塭檣 檜嘐雖 ""-"" 辦",Data/Interface/Concept/UI_Object_002.png,341,293,346,297,50,21
+9,"蝶鑒お葬 塭檣 檜嘐雖 ""+""",Data/Interface/Concept/UI_Object_002.png,352,266,407,325,0,0
+10,"蝶鑒お葬 塭檣 檜嘐雖 ""-----""",Data/Interface/Concept/UI_Object_002.png,352,287,407,291,0,21
+11,"蝶鑒お葬 塭檣 檜嘐雖 ""|"" 嬪睡攪 嬴楚部",Data/Interface/Concept/UI_Object_002.png,378,266,382,325,26,0
+12,"蝶鑒お葬 塭檣 檜嘐雖 ""戎""",Data/Interface/Concept/UI_Object_002.png,352,266,382,291,0,0
+13,"蝶鑒お葬 塭檣 檜嘐雖 ""戌""",Data/Interface/Concept/UI_Object_002.png,378,266,407,291,26,0
+14,"蝶鑒お葬 塭檣 檜嘐雖 ""忙""",Data/Interface/Concept/UI_Object_002.png,378,287,407,325,26,21
+15,"蝶鑒お葬 塭檣 檜嘐雖 ""忖""",Data/Interface/Concept/UI_Object_002.png,352,287,382,325,0,21
 16,,,0,0,0,0,0,0
 17,,,0,0,0,0,0,0
 18,,,0,0,0,0,0,0
