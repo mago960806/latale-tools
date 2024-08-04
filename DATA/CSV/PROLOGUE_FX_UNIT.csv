@@ -1,74 +1,74 @@
 ID,_FxUnit,_Description
-99999,TRAP_SPARK.FXM,ヅ煤煎斜 纔蝶⑷辨
-583,bossskill_01.FXM,爾蝶蝶鑒
-584,bossskill_02.FXM,爾蝶蝶鑒
-585,bossskill_03.FXM,爾蝶蝶鑒
-586,bossskill_04.FXM,爾蝶蝶鑒
-587,bossskill_05.FXM,爾蝶蝶鑒
-588,bossskill_06.FXM,爾蝶蝶鑒
-589,bossskill_07.FXM,爾蝶蝶鑒
-590,bossskill_08.FXM,爾蝶蝶鑒
-591,bossskill_09.FXM,爾蝶蝶鑒
-592,bossskill_10.FXM,爾蝶蝶鑒
-593,bossskill_11.FXM,爾蝶蝶鑒
-594,bossskill_12.FXM,爾蝶蝶鑒
-595,bossskill_13.FXM,爾蝶蝶鑒
-596,bossskill_14.FXM,爾蝶蝶鑒
-597,bossskill_15.FXM,爾蝶蝶鑒
-598,IRIS_1ST_R01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-599,IRIS_1ST_R02.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-600,IRIS_1ST_R03.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-601,IRIS_1ST_R04.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-602,IRIS_1ST_R05.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-603,IRIS_1ST_R06.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-604,IRIS_1ST_R07.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-605,IRIS_1ST_R08.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-606,IRIS_1ST_R09.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-607,IRIS_1ST_R10.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-608,IRIS_1ST_R11.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-609,IRIS_1ST_R12.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-610,IRIS_1ST_R13.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-611,IRIS_1ST_R14.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-612,IRIS_1ST_R15.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-613,IRIS_1ST_R16.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-614,IRIS_1ST_R17.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-615,IRIS_1ST_R18.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-616,IRIS_1ST_R19.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-617,IRIS_1ST_R20.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-618,IRIS_1ST_R21.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-619,IRIS_1ST_R22.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-620,IRIS_1ST_R23.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-621,IRIS_1ST_R24.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-622,IRIS_1ST_R25.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-623,IRIS_2ND_ATT01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-624,IRIS_2ND_ATT_BURN00.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-625,IRIS_2ND_ATT_BURN01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-626,IRIS_2ND_ATT_BURN02.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-627,IRIS_2ND_BOM.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-628,IRIS_CUT00.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-629,IRIS_MAGIC_ATT_00.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-630,IRIS_MAGIC_ATT_01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-631,IRIS_MAGIC_ATT_02.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-632,IRIS_MAGIC_RIGHT.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-633,IRIS_MAGIC_RING01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-634,IRIS_MAGIC_RING02.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-635,IRIS_MAGIC_RING03.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-636,IRIS_MAGIC_RING04.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-637,IRIS_MAGIC_RING05.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-638,IRIS_MAGIC_RING_01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-639,IRIS_MAGIC_RING_02.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-640,IRIS_MAGIC_RING_03.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-641,IRIS_MAGIC_RING_04.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-642,IRIS_MAGIC_WORD00.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-643,IRIS_MAGIC_WORD01.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-644,IRIS_RIGHT.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-645,IRIS_RIGHT_00.FXM,ヅ煤煎斜 檜葬蝶 蝶鑒
-646,IRIS_NOMAL ATT.FXM,ヅ煤煎斜 檜葬蝶 擒奢問
-647,IRIS_HEAVY ATT.FXM,ヅ煤煎斜 檜葬蝶 鬼奢問
-648,BOSS_THUNDER_01_01.FXM,爾蝶廓偃 01
-649,BOSS_THUNDER_01_02.FXM,爾蝶廓偃 01
-650,BOSS_THUNDER_01_03.FXM,爾蝶廓偃 01
-651,GUARD_PL.FXM,廓偃 寞橫
+99999,TRAP_SPARK.FXM,프롤로그 테스트용
+583,bossskill_01.FXM,보스스킬
+584,bossskill_02.FXM,보스스킬
+585,bossskill_03.FXM,보스스킬
+586,bossskill_04.FXM,보스스킬
+587,bossskill_05.FXM,보스스킬
+588,bossskill_06.FXM,보스스킬
+589,bossskill_07.FXM,보스스킬
+590,bossskill_08.FXM,보스스킬
+591,bossskill_09.FXM,보스스킬
+592,bossskill_10.FXM,보스스킬
+593,bossskill_11.FXM,보스스킬
+594,bossskill_12.FXM,보스스킬
+595,bossskill_13.FXM,보스스킬
+596,bossskill_14.FXM,보스스킬
+597,bossskill_15.FXM,보스스킬
+598,IRIS_1ST_R01.FXM,프롤로그 이리스 스킬
+599,IRIS_1ST_R02.FXM,프롤로그 이리스 스킬
+600,IRIS_1ST_R03.FXM,프롤로그 이리스 스킬
+601,IRIS_1ST_R04.FXM,프롤로그 이리스 스킬
+602,IRIS_1ST_R05.FXM,프롤로그 이리스 스킬
+603,IRIS_1ST_R06.FXM,프롤로그 이리스 스킬
+604,IRIS_1ST_R07.FXM,프롤로그 이리스 스킬
+605,IRIS_1ST_R08.FXM,프롤로그 이리스 스킬
+606,IRIS_1ST_R09.FXM,프롤로그 이리스 스킬
+607,IRIS_1ST_R10.FXM,프롤로그 이리스 스킬
+608,IRIS_1ST_R11.FXM,프롤로그 이리스 스킬
+609,IRIS_1ST_R12.FXM,프롤로그 이리스 스킬
+610,IRIS_1ST_R13.FXM,프롤로그 이리스 스킬
+611,IRIS_1ST_R14.FXM,프롤로그 이리스 스킬
+612,IRIS_1ST_R15.FXM,프롤로그 이리스 스킬
+613,IRIS_1ST_R16.FXM,프롤로그 이리스 스킬
+614,IRIS_1ST_R17.FXM,프롤로그 이리스 스킬
+615,IRIS_1ST_R18.FXM,프롤로그 이리스 스킬
+616,IRIS_1ST_R19.FXM,프롤로그 이리스 스킬
+617,IRIS_1ST_R20.FXM,프롤로그 이리스 스킬
+618,IRIS_1ST_R21.FXM,프롤로그 이리스 스킬
+619,IRIS_1ST_R22.FXM,프롤로그 이리스 스킬
+620,IRIS_1ST_R23.FXM,프롤로그 이리스 스킬
+621,IRIS_1ST_R24.FXM,프롤로그 이리스 스킬
+622,IRIS_1ST_R25.FXM,프롤로그 이리스 스킬
+623,IRIS_2ND_ATT01.FXM,프롤로그 이리스 스킬
+624,IRIS_2ND_ATT_BURN00.FXM,프롤로그 이리스 스킬
+625,IRIS_2ND_ATT_BURN01.FXM,프롤로그 이리스 스킬
+626,IRIS_2ND_ATT_BURN02.FXM,프롤로그 이리스 스킬
+627,IRIS_2ND_BOM.FXM,프롤로그 이리스 스킬
+628,IRIS_CUT00.FXM,프롤로그 이리스 스킬
+629,IRIS_MAGIC_ATT_00.FXM,프롤로그 이리스 스킬
+630,IRIS_MAGIC_ATT_01.FXM,프롤로그 이리스 스킬
+631,IRIS_MAGIC_ATT_02.FXM,프롤로그 이리스 스킬
+632,IRIS_MAGIC_RIGHT.FXM,프롤로그 이리스 스킬
+633,IRIS_MAGIC_RING01.FXM,프롤로그 이리스 스킬
+634,IRIS_MAGIC_RING02.FXM,프롤로그 이리스 스킬
+635,IRIS_MAGIC_RING03.FXM,프롤로그 이리스 스킬
+636,IRIS_MAGIC_RING04.FXM,프롤로그 이리스 스킬
+637,IRIS_MAGIC_RING05.FXM,프롤로그 이리스 스킬
+638,IRIS_MAGIC_RING_01.FXM,프롤로그 이리스 스킬
+639,IRIS_MAGIC_RING_02.FXM,프롤로그 이리스 스킬
+640,IRIS_MAGIC_RING_03.FXM,프롤로그 이리스 스킬
+641,IRIS_MAGIC_RING_04.FXM,프롤로그 이리스 스킬
+642,IRIS_MAGIC_WORD00.FXM,프롤로그 이리스 스킬
+643,IRIS_MAGIC_WORD01.FXM,프롤로그 이리스 스킬
+644,IRIS_RIGHT.FXM,프롤로그 이리스 스킬
+645,IRIS_RIGHT_00.FXM,프롤로그 이리스 스킬
+646,IRIS_NOMAL ATT.FXM,프롤로그 이리스 약공격
+647,IRIS_HEAVY ATT.FXM,프롤로그 이리스 강공격
+648,BOSS_THUNDER_01_01.FXM,보스번개 01
+649,BOSS_THUNDER_01_02.FXM,보스번개 01
+650,BOSS_THUNDER_01_03.FXM,보스번개 01
+651,GUARD_PL.FXM,번개 방어
 0,,
 0,,
 0,,
